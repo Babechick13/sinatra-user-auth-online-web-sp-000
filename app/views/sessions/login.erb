@@ -1,18 +1,12 @@
-<html></html> 
-<h1>Log In Below:</h1>
-
-<h1>app/POST</h1>
-
-<h1>Registrations</h1>
-
-get '/Registrations/signup'
-do
-  erb 
-: '/Registrations/signup
-end
-
-{"name"=>"Beini Huang", "email"=>"beini@bee.com", "password"=>"password"}
-
-@user = User.new(name: params["name"], email: params["email"], password: params["password"])
-@user.save
+<h1>log in below:<h1>
+<form action='/sessions' method="POST">
+  <label>Email:</label>
+  <br/>
+  <input type="text" name="email">
+  <br/>
+  <label>Password:</label>
+  <br/>
+  <input type="password" name="password">
+  <input type="submit" value="Log In">
+</form>
 
